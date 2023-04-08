@@ -17,7 +17,7 @@ Sidkiq
 
 ## Context
 
-We are in a delivery management system. And we will implement outbound notifications for delivery and when the order is delivered.
+We are in a delivery management system, this name is Ligeirinho LTDA. And we will implement outbound notifications for delivery and when the order is delivered.
 Our customer will register the delivery follow-up on their website.
 
 ## Flow
