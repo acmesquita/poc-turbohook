@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resource :customers, only: [:create]
+  
+  post "/customers", to: "customers#create"
+  post "/customers/:customer_id/orders", to: "orders#create"
 end

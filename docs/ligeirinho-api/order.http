@@ -1,0 +1,15 @@
+### Create a new order to customer 1
+POST http://localhost:3000/customers/1/orders HTTP/1.1
+Content-Type: application/json
+
+{
+  "description": "123 - Box XPTO - 3"
+}
+
+### Try create a new order to invalid customer
+POST http://localhost:3000/customers/543/orders HTTP/1.1
+Content-Type: application/json
+
+{
+  "description": "123 - Box XPTO - 3"
+}
