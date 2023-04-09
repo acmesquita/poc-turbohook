@@ -5,11 +5,11 @@ class Order < ApplicationRecord
 
   validates :description, presence: :true
 
-  def initing_delivery
-    update!({ init_delivery_at: Time.zone.now(), status: :in_transit }) if status == :waiting_for_exit
+  def initing_delivery!
+    self.update!(init_delivery_at: Time.zone.now(), status: :in_transit ) if self.waiting_for_exit?
   end
 
-  def finishing_delivery
-    update!({ finish_delivery_at: Time.zone.now(), status: :delivered }) if status == :in_transit
+  def finishing_delivery!
+    self.update!({ finish_delivery_at: Time.zone.now(), status: :delivered }) if self.in_transit?
   end
 end
