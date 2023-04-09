@@ -1,0 +1,15 @@
+### Create a new customer
+POST http://localhost:3000/customers HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Pepe li Pew 2"
+}
+
+### Invalid creation a customer
+POST http://localhost:3000/customers HTTP/1.1
+Content-Type: application/json
+
+{
+  "nome": ""
+}
