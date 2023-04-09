@@ -1,0 +1,16 @@
+### Create a new webhook with all types to customer 1
+POST http://localhost:3000/customers/1/webhooks HTTP/1.1
+Content-Type: application/json
+
+{
+  "url_callback": "http://localhost:3002"
+}
+
+### Create a new webhook with one type to customer 1
+POST http://localhost:3000/customers/1/webhooks HTTP/1.1
+Content-Type: application/json
+
+{
+  "url_callback": "http://localhost:3002",
+  "notify_types": 0
+}
