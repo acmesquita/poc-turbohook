@@ -7,7 +7,7 @@ This project is a POC to implement a solution to webhook escalably and flexibly.
 ```
  API - (Publish) -> RabbitMQ - (Consumer) -> Dispasher - (POST /callback) -> Client
   |
-Sidkiq
+Sidkiq - (Redis)
 ```
 
 - **API**: Service that inform the structure, using async job for publisher a item to queue.
